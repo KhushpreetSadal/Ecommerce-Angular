@@ -1,0 +1,21 @@
+<div class="signup">
+    <form #usersignup="ngForm" (ngSubmit)="signup(usersignup.value)" *ngIf="show == true" class="form">
+    <h1>User Signup</h1>
+
+    <input type="text" ngModel name="name" placeholder="Name" class="form-input">
+    <input type="email" ngModel name="email" placeholder="Email" class="form-input">
+    <input type="password" ngModel name="password" placeholder="Password" autocomplete="off" class="form-input">
+    <button class="button">Signup</button>
+    <a (click)="show_login()"  class="userlink">Already Have An Account?Login</a>
+
+</form>
+<form #userlogin="ngForm" (ngSubmit)="login(userlogin.value)"  *ngIf="show == false" class="form">
+    <h1>User login</h1>
+
+    <input type="email" ngModel name="email" placeholder="Email" class="form-input">
+    <input type="password" ngModel name="password" placeholder="Password" autocomplete="off" class="form-input">
+    <button class="button">Login</button>
+    <a (click)="show_signup()" class="userlink">Creat New Account?Signup</a>
+
+</form>
+</div>

@@ -1,0 +1,14 @@
+<div class="addproduct">
+    <h1>Add Your Address</h1>
+<form class="form" #address="ngForm" (ngSubmit)="senddata(address.value)">
+    <input class="form-input" type="text" name="name" ngModel id="" placeholder="Name">
+    <input class="form-input" type="number" name="number" ngModel id="" placeholder="Number">
+    <input class="form-input" type="text" name="house" ngModel id="" placeholder="House">
+    <input class="form-input" type="text" name="city" ngModel id="" placeholder="City">
+    <input class="form-input" type="number" name="pincode" ngModel id="" placeholder="Pincode">
+    <input class="form-input" type="text" name="state" ngModel id="" placeholder="State">
+
+    <button class="button-reverse">submit</button>
+    
+</form>
+</div>

@@ -1,0 +1,20 @@
+<div class="signup" *ngIf="!showpage">
+<h1>Seller-Signup</h1>
+<form #sellerForm="ngForm" (ngSubmit)="submit(sellerForm.value)" class="form">
+    <input type="text" ngModel name="name" placeholder="Name" class="form-input">
+    <input type="password" ngModel name="password" placeholder="Password" class="form-input" autocomplete="on">
+    <input type="email" ngModel name="email" placeholder="Email" class="form-input">
+    <button class="button">Submit</button>
+    <a (click)="loginpage()"  class="userlink">Already have an account? Click here</a>
+</form>
+</div>
+
+<div class="login" *ngIf="showpage">
+    <h1>Seller-login</h1>
+    <form #loginform="ngForm" (ngSubmit)="login(loginform.value)" class="form">
+        <input type="email" ngModel name="email" placeholder="Email" class="form-input">
+        <input type="password" ngModel name="password" placeholder="Password" class="form-input" autocomplete="on">
+        <button class="button">Submit</button>
+        <a (click)="signuppage()"  class="userlink">Creat new account? Click here</a>
+    </form>
+    </div>

@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+
+}
+.image img{
+
+    width: 32vw;
+    height: 75vh;
+    margin:2.5vw 2vw;
+    border-radius: 8%;
+}
+.details{
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.color{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: 1.5px solid rgb(107, 104, 104);
+    display: flex;
+}
+.button-reverse{
+    font-size: 2vw;
+    width: 12vw;
+    height: 3vw;
+}
+.color-fix{
+    display: flex;
+}
+.quantity{
+    display: flex;
+    margin:1vw 0vw;
+}
+.btn{
+    color: #9215e8;
+    border: 2px solid black;
+    width: 3vw;
+    height: 3vw;
+    margin: 0vw 2vw;
+    font-size: 2vw;
+    padding: 0px;
+}
+
+h3{
+    padding-top: .5vw;
+}

@@ -1,0 +1,18 @@
+
+<h1 class="main-color">Results</h1>
+<div class="products">
+    <ul *ngFor="let list of response">
+        <div class="img">
+            <a (click)="view_product(list.id)"><img src="{{list.image}}" alt=""></a>
+        </div>
+        <div class="list">
+    <li>{{list.name|titlecase}}</li>
+    <li>{{list.price|currency:"INR"}}</li>
+    <li>{{list.color|titlecase}}</li>
+    <li>{{list.category|titlecase}}</li>
+    <li>{{list.description|titlecase}}</li>
+    <button class="button-reverse">Buy Now</button>
+    <button class="button-reverse" (click)="view_product(list.id)">View product</button>
+    </div>
+</ul>
+</div>

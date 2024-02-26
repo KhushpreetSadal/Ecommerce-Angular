@@ -1,0 +1,50 @@
+h1{
+    width: 6vw;
+    margin:2vw auto;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.item {
+    display: flex;
+    margin: 3vw;
+    border: 2px solid gray;
+    width: 90%;
+}
+.image{
+    display: flex;
+    align-items: center;
+    margin: 1vw;
+}
+.image img{
+    width: 10vw;
+    height: 25vh;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px;
+}
+.summary{
+    flex-direction: column;
+    width: 45%;
+    padding: 1vw;
+    border: none;
+    margin-left: 4vw;
+}
+h2{
+    margin: 1vw auto 2vw auto;
+    width: fit-content;
+}
+.cartitems{
+    display: flex;
+}
+h5{
+    margin-left: 2.5vw;
+}
+.Buy{
+margin-left: 2vw;
+}

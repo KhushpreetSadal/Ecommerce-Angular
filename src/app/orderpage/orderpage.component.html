@@ -1,0 +1,17 @@
+<h1 class="main-color text-center mt-5">Orders</h1>
+<div class="item" *ngFor="let item of items">
+    
+    <div class="image">
+    <img src="{{item.image}}" alt="">
+    </div>
+    <ul class="list">
+        <h3>{{item.name|titlecase}}</h3>
+        <h3>{{item.price|currency:"INR"}}</h3>
+        <h3>{{item.color|titlecase}}</h3>
+        <h3>{{item.category|titlecase}}</h3>
+        <h3>Qty: {{item.quantity}}</h3>
+        <h3>Delivery : Pending</h3>
+    </ul>
+   
+
+</div>

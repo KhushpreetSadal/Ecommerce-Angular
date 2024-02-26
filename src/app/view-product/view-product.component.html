@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="image">
+        <img src="{{product?.image}}" alt="">
+    </div>
+    <div class="details">
+        <h1 class="main-color">{{product?.name |titlecase}}</h1>
+        <h1>{{product?.price|currency:"INR"}}</h1>
+        <div class="color-fix">
+        <h1>Color : </h1>
+        <div [style.backgroundColor]="product?.color" class="color"></div>
+        </div>
+        <h1>Category : {{product?.category |titlecase}}</h1>
+        <h1>{{product?.description |titlecase}}</h1>
+        <div class="quantity">
+            <button  class="btn" (click)="plus()">+</button>
+            <h3>{{quantity}}</h3>
+            <button  class="btn" (click)="minus()">-</button>
+        </div>
+        <div class="btns">
+            <button *ngIf="!remove" class="button-reverse" (click)="add_to_cart(product)">Add to Cart</button>
+            <button *ngIf="remove" class="button-reverse" (click)="removeitem(id)">Remove</button>
+            <button class="button-reverse">Buy Now</button>
+        </div>
+
+      
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div >
+    <h1 class="ordernow text-center mt-5">Confirm your order</h1>
+    <h3 class="ordernow text-center">Payment Method : Cash on Delivery</h3>  
+    <h3 class="text-center">Address : {{address}}</h3>
+</div>
+<div class="list">
+    
+    <ul *ngFor="let item of product">
+        <li>{{item.name}}</li>
+        <li>{{item.price}}</li>
+    </ul>
+    <h3>total:{{totalprice}}</h3>
+    <button class="button-reverse btn" (click)="storeorder()">Place Order</button>
+
+</div>

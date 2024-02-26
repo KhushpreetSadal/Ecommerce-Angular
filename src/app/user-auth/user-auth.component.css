@@ -1,0 +1,26 @@
+.signup {
+    background-color: #9215e8;
+    margin: 8vw auto 0vw auto; 
+    text-align: center;
+    width: 35vw;
+    height: 25vw;
+    border-radius: 10px;
+  padding: 1vw;
+  }
+  h1{
+      color:  #ff7c4d;
+      margin:1vw;
+  }
+  .login {
+    background-color: #9215e8;
+    margin: 8vw auto 0vw auto; 
+    text-align: center;
+    width: 35vw;
+    height: 25vw;
+    border-radius: 10px;
+  padding: 1vw;
+  }
+ a{
+  color:white;
+  text-decoration: none;
+ }

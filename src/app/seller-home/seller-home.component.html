@@ -1,0 +1,17 @@
+<h1>Products</h1>
+<div class="products">
+    <ul *ngFor="let list of products">
+        <div class="img">
+            <img src="{{list.image}}" alt="">
+        </div>
+        <div class="list">
+    <li>{{list.name|titlecase}}</li>
+    <li>{{list.price|currency:"INR"}}</li>
+    <li>{{list.color|titlecase}}</li>
+    <li>{{list.category|titlecase}}</li>
+    <li>{{list.description|titlecase}}</li>
+    <button (click)="update(list.id)" class="button-reverse">Edit</button>
+    <button (click)="remove(list.id)" class="button-reverse">Delete</button>
+</div>
+</ul>
+</div>

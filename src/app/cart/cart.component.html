@@ -1,0 +1,38 @@
+<h1 class="main-color">Cart</h1>
+
+<h2 *ngIf="showstyle==0">Please Add Something to Cart</h2>
+
+<div class="cartitems">
+
+<div class="cart" *ngIf="showstyle == 2">
+<div class="item" *ngFor="let item of cart_item">
+    
+    <div class="image">
+    <img src="{{item.image}}" alt="">
+    </div>
+    <ul class="list">
+        <h3>{{item.name|titlecase}}</h3>
+        <h3>{{item.price|currency:"INR"}}</h3>
+        <h3>{{item.color|titlecase}}</h3>
+        <h3>{{item.category|titlecase}}</h3>
+        <h3>Qty: {{item.quantity}}</h3>
+        <div class="buttons">
+        <button class="button-reverse" (click)="removeitem(item.id)">remove</button>
+        <button class="button-reverse">buy now</button>
+        </div>
+    </ul>
+   
+
+</div>
+</div>
+<div class="summary" >
+    <h2>Summary</h2>
+    <ul *ngFor="let value of cart_item">
+    <li class="price">{{value.name|titlecase}}</li>
+</ul>
+    <h5>Total : {{totalprice|currency:'INR'}}</h5>
+<button class="button-reverse Buy" (click)="buy()">Buy</button>
+</div>
+</div>
+
+

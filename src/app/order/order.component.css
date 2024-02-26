@@ -1,0 +1,12 @@
+.list{
+
+    width: fit-content;
+    margin: 2vw auto;
+}
+.btn{
+    width: 7vw;
+}
+.btn:hover{
+    background-color:#9215e8 ;
+    color: white;
+}

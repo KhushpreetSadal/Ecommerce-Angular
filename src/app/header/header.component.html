@@ -1,0 +1,47 @@
+<nav class="back-color navbar">
+    <div class="logo">
+        <h1>E-Comm</h1>
+    </div>
+    <div class="search-box" *ngIf="show_search === true">
+        <input #searchbox type="text" ngModel="{{ name|titlecase }}" placeholder="Search-Here"
+            (keyup)="search(searchbox.value)" />
+        <button class="button" (click)="show_res(searchbox.value)">Search</button>
+    </div>
+
+    <div class="display" *ngIf="show == true">
+        <ul *ngFor="let item of display">
+            <li>
+                <button (click)="fill_form(item.name)">
+                    {{ item.name | titlecase }}
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navigation" [ngSwitch]="headerstyle">
+        <ul *ngSwitchCase="'defaultstyle'">
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="seller-signup">Seller</a></li>
+            <li><a routerLink="user-auth">Login</a></li>
+            <li><a routerLink="user-cart">Cart({{cartdata}})</a></li>
+        </ul>
+        <ul *ngSwitchCase="'sellerstyle'">
+            <li><a routerLink="">Home</a></li>
+            <li>
+                <a>{{ sellername | titlecase }}</a>
+            </li>
+            <li><a routerLink="seller-addproduct">Add-Product</a></li>
+            <li><a routerLink="seller-home">Product-List</a></li>
+            <li><a (click)="logout_seller()">Log-out</a></li>
+        </ul>
+        <ul *ngSwitchCase="'userstyle'">
+            <li><a routerLink="">Home</a></li>
+            <li>
+                <a>{{ username | titlecase }}</a>
+            </li>
+            <li><a routerLink="user-cart">cart({{cartdata}})</a></li>
+            <li><a routerLink="user-orderpage">Orders</a></li>
+            <li><a (click)="logout_user()">Log-out</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,57 @@
+.image{
+    
+    width: 30vw;
+    height: 65vh;
+    margin: 2vw;
+    text-align: center;
+    
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    background-color: rgb(3 3 3 / 20%);
+    border-radius: 2vw;
+    padding: 1vw;
+    margin: auto;
+
+}
+ul{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 31%;
+    padding: 0%;
+    background-color: white;
+    margin: 0.4vw
+}
+img{  
+        width: 10vw;
+        height: 12vw;
+        margin: 2vw;
+    }
+li{
+    list-style: none;
+    font-size: 1.3vw;
+}
+.products{
+    justify-content: center;
+    display: flex;
+    width:100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.list{
+    width: 20vw;
+}
+.img{
+    height: 16vw;
+    width: 15vw;
+}
+ h1{
+font-size: 2.5rem;
+margin: 1vw auto;
+width: 29vw;
+}

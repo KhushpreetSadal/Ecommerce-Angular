@@ -1,0 +1,73 @@
+.navbar{
+    display: flex;
+    background-color:#9215e8;
+    justify-content: space-between;
+    padding:0px 4vw;
+    align-items: center;
+    height: 6vw;
+}
+.navbar .logo h1{
+    color: #ff7c4d;
+    font-size: 3.5vw;
+}
+.navbar .search-box input{
+    width: 15vw;
+height: 2vw;
+border: none;
+border-radius: 5px;
+font-size: 1vw;
+padding: 2px;
+color: #9215e8;
+
+}
+.navbar .search-box .button{
+    width: 5vw;
+    height: 2.1vw;
+    border: none;
+    border-radius: 7px;
+    font-size: 1vw;
+    padding: 2px;
+    margin: .5vw;
+    background-color: white;
+    color: #9215e8;
+}
+.navigation ul{
+    display: flex;
+    margin: 0%;
+    list-style: none;
+
+}
+.navigation ul li{
+    margin: 2vw;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+}
+.display{
+    background-color: white;
+    color: black;
+    position: absolute;
+    left: 28.2vw;
+    top: 3.9vw;
+    z-index: 2;
+    width: 15vw;
+
+}
+.display ul{
+    display: flex;
+    margin: 0%;
+    list-style: none;
+    flex-direction: column;
+    padding: 4px 4px;
+}
+.display ul li{
+    border-bottom: 1px solid #d1d1d1;
+}
+.display ul li button{
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+}
