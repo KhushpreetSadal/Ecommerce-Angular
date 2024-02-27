@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
 ## use Json-Server to initate server 
-command: json--server --watch db.json
+command: json-server --watch db.json
 
 ## Development server
 
